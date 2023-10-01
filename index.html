@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Desafio/beach_694788.png">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="Desafio/css/bootstrap.min.css">
+    <script src="Desafio/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Rio de Janeiro</h1>
+        <span id="hamburguer"                    class="material-symbols-rounded">
+            menu
+        </span>
+
+        
+
+        <nav id="itens_menu" class="header_nav">
+           <ul>
+                <li><a href="#"><b>Rio</b></a></li>
+                <li><a href="#"><b>Museu</b></a></li>
+                <li><a href="#"><b>Arraial</b></a></li>
+                <li><a href="#"><b>Cristo</b></a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+    
+    <main class="altura">
+        <img src="Desafio/humped-5404701_1280.jpg" alt="Cristo">
+       
+        
+       <div class="container">
+
+       <a class="btn  btn-info btn-lg" href="http://127.0.0.1:5500/index2.html" target="_blank"> Galeria</a>
+
+       </div>
+
+    </main>
+    
+
+   
+    
+   <footer>
+    <img  src="Desafio/github_2111292.png" alt="github" class="icones" >
+    <img src="Desafio/linkedin_3536505.png" alt="linkedin" class="icones">
+    <img src="Desafio/whatsapp_2504957.png" alt="whatsapp" class="icones">
+    
+    <br>
+     Elas na tech 
+   </footer>
+
+   
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer(){
+            if(itens_menu.style.display == 'block'){
+                itens_menu.classList.remove('show');
+
+            }else{
+                itens_menu.classList.toggle('show');
+            }
+        }
+
+    
+          
+
+
+
+        
+    </script>
+    
+    
+</body>
+</html>
